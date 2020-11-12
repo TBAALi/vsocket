@@ -32,6 +32,7 @@ io.on('connection',(vsocket)=>{
     });
 
     vsocket.on('creatingorder',gdata=>{
+        console.log("Se esta creando un pedido");
         console.log(gdata);
         vsocket.broadcast.emit('creatingorder',gdata);
     });
