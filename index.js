@@ -21,7 +21,8 @@ var app = require('express')();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 
-http.listen(45174, () => { console.log('listening on *:45174'); });
+http.listen(7171, () => { console.log('listening on *:7171'); });
+// http.listen(45174, () => { console.log('listening on *:45174'); });
 
 const counters = io.of('/counters');
 
